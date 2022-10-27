@@ -1,4 +1,5 @@
 FROM alpine:latest
+RUN apk add gcompat
 WORKDIR /app
 COPY ./target/release/raft-json-server /app/
 EXPOSE 3000/tcp
