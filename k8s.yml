@@ -57,6 +57,9 @@ spec:
       containers:
       - name: raft-json
         image: ghcr.io/ukd1/raft-for-beginners-too-json-server:latest
+        env:
+          - name: RUST_LOG
+            value: "info"
         resources:
           limits:
             memory: "64Mi"
